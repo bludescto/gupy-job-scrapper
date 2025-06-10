@@ -95,4 +95,11 @@ with open('jobs.csv', 'w', newline='', encoding='utf-8') as csvfile:
         except requests.exceptions.RequestException as e:
             print(f"Erro ao buscar dados para {label}: {e}")
 
+       
+print("Descrição KEYWORDS:", os.getenv("DESCRIPTION_REQUIRED_KEYWORDS"))
+print("Título KEYWORDS:", os.getenv("TITLE_KEYWORDS"))
+print("DEBUG TITLE_KEYWORDS:", os.getenv("TITLE_KEYWORDS"))
+print("DEBUG DESCRIPTION_REQUIRED_KEYWORDS:", os.getenv("DESCRIPTION_REQUIRED_KEYWORDS"))
+print("DEBUG DATE_START:", os.getenv("DATE_START"))
+
 
